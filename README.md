@@ -1,94 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Next Website</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family:'poppins' sans-serif;
-             box-sizing: border-box;
-        }
-        .hero{
-            width: 100%;
-            height: 100vh;
-            background-image: linear gradient(0,0,0,0.7),#3551b5 ,url(feature.png);
-            background-color: rgb(255, 115, 0);
-            background-size: cover;
-            background-position: center;
-            font-family: sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        form{
-            width: 90%;
-            max-width: 600px;
-        }
-        .input-group{
-            margin-bottom: 30px;
-            position: relative;
-        }
-        input,textarea{
-            width: 100%;
-            padding: 10px;
-            outline: 0;
-            border: 1px solid #fff;
-            color: #fff;
-            background: transparent;
-            font-size: 15px;
-        }
-        label{
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top:0;
-            padding: 10px;
-            color: #fff;
-            cursor: text;
-            transition: 0.2s;
-        }
-        button{
-            padding: 10px 0;
-            color: #fff;
-            outline:none;
-            background: transparent;
-            border:1 px solid #fff;
-            width:100% ;
-            cursor: pointer;
-        }
-        input :focus~label{
-            top:-35px;
-            font-size: 14px;
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+  <style>
 
-    </style>
-</head>
-<body>
+ 
+  h2{
+    text-align:left;
+  }
+  
+ 
+
+  body{
+    background-color:pink;
+  }
+  .websites{
+   
+    text-align:right;
     
-    <div class="hero">
-       <form >
-           <div class="input-group">
-               <input type="text"  id="name" required>
-               <label for="name">Your name</label>
-          </div>
-          <div class="input-group">
-            <input type="text"  id="number" required>
-            <label for="number">Phone Number</label>
-       </div>
-       <div class="input-group">
-        <input type="email"  id="email" required>
-        <label for="email">Email-id</label>
-   </div>
-   <div class="input-group">
-    <textarea id="message" rows="8"></textarea>
-    <label for="message">Your message</label>
-</div>
-<button type="submit">SUBMIT</button>
-       </form>
-    </div>
+  }
+  .col1,.col2{
+    flex-basis:50%;
+  }
+  </style>
+</head>
+
+</body>
+<body>
+  <div class ="websites">
+  <a href="http://www.google.com">Google</a>
+  <a href="http://www.Amazon.com">Amazon</a>
+  <a href="http://www.Walmart.com">Walmart</a>
+  <a href="http://www.Costco.com">Costco</a>
+  </div>
+    <h2>Register Here</h2>
+  <label>UserName</label>
+  <input placeholder="Enter UserName Here" type="text">
+  </div>
+  <label>Password</label>
+  <input placeholder="Enter Your Password" type="password">
+  <div>
+  <p>Select Your Favorite Fruits</p>
+  
+    <input type="checkbox"/><label>Apple</label>
+  <input type="checkbox"/><label>Mango</label>
+
+  <input type="checkbox"/><label>Banana</label>
+
+  <input type="checkbox"/><label>Strawberry</label>
+  </div>
+  <div>
+  <p>Select Your Gender</p>
+  <input type="radio"/><label>Male</label>
+  <input type="radio"/><label>Female</label>
+  </div>
+  <p>Select Your Country</p>
+  <select>
+    <option value="USA">USA</option>
+    <option value="IND">India</option>
+    <option value="AUS">Australia</option>
+  </select>
+
+  
+  <div>
+  <button>Submit</button><button>Cancel</button>
+  </div>
 </body>
 </html>
